@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Eslam-Ahmed-s-workspace-8ujb2n.eu-central-1.xata.sh/db/EA_SnapScreen",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
