@@ -2,7 +2,7 @@
 const VideoId = () => {
     return (
         <main className="wrapper page">
-            VIDEO DETALE
+            VIDEO details
         </main>
     )
 }
