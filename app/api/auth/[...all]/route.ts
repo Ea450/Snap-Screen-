@@ -22,6 +22,7 @@ const rateLimit = aj.withRule(
 const protectedAuth = async (req: NextRequest): Promise<ArcjetDecision> => {
     const session = await auth.api.getSession({ headers: req.headers });
 
+    console.log('session', session);
     let userId: string;
 
     if (session?.user?.id) {

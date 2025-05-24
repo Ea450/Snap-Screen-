@@ -34,17 +34,17 @@ export const useFileInput = (maxSize: number) => {
         }
     }
 
-    const resetFile =()=>{
-        if(previewUrl) URL.revokeObjectURL(previewUrl);
-        
+    const resetFile = () => {
+        if (previewUrl) URL.revokeObjectURL(previewUrl);
+
         setFile(null)
         setPreviewUrl('')
         setDuration(0)
 
-        if(inputRef.current) inputRef.current.value= '';
+        if (inputRef.current) inputRef.current.value = '';
     }
 
     return {
-        file,previewUrl,duration,inputRef,handleFileChange,resetFile
+        file, previewUrl, duration, inputRef, handleFileChange, resetFile
     }
 }
