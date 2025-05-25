@@ -2,8 +2,7 @@ import Header from "@/components/Header"
 import VideoCard from "@/components/VideoCard"
 import { dummyCards } from "@/constants"
 
-const ProfileId = async ({ params }: ParamsWithSearch) => {
-    const { id } = await params
+const ProfileId = async () => {
     return (
         <div className="wrapper page">
             <Header title="Eslam Next JS"

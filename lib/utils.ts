@@ -303,6 +303,7 @@ export function daysAgo(inputDate: Date): string {
 export const createIframeLink = (videoId: string) =>
     `https://iframe.mediadelivery.net/embed/427355/${videoId}?autoplay=true&preload=true`;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const doesTitleMatch = (videos: any, searchQuery: string) =>
     ilike(
         sql`REPLACE(REPLACE(REPLACE(LOWER(${videos.title}), '-', ''), '.', ''), ' ', '')`,
